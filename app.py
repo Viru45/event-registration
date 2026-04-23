@@ -24,7 +24,7 @@ def register():
 
         users.append(user)
 
-        return f"Registration Successful for {name}!"
+        return f"🎉 Successfully Registered, {name}!"
 
     return render_template('register.html')
 
