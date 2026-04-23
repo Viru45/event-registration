@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 
 app = Flask(__name__)
 
-# Temporary storage (for demo)
+# Temporary storage (for demo purposes only, not suitable for production)
 users = []
 
 @app.route('/')
@@ -27,7 +27,6 @@ def register():
         return f"Registration Successful for {name}!"
 
     return render_template('register.html')
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
