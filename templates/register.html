@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+    <style>
+        body { font-family: Arial; text-align: center; margin-top: 50px; }
+        form { display: inline-block; }
+        input, select { margin: 10px; padding: 8px; width: 200px; }
+        button { padding: 10px 20px; }
+    </style>
+</head>
+<body>
+
+<h2>Event Registration Form</h2>
+
+<form method="POST">
+    <input type="text" name="name" placeholder="Full Name" required><br>
+    <input type="email" name="email" placeholder="Email" required><br>
+
+    <select name="event" required>
+        <option value="">Select Event</option>
+        <option value="Workshop">Workshop</option>
+        <option value="Seminar">Seminar</option>
+        <option value="Hackathon">Hackathon</option>
+    </select><br>
+
+    <button type="submit">Register</button>
+</form>
+
+</body>
+</html>
